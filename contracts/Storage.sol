@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 
 contract Storage {
     mapping (uint256 => uint256) store;
-    event DataStored(uint256 data, uint256 time);
+    event DataStored(uint256 indexed data, uint256 time);
 
     /**
      * Store 32 bytes of data onto the blockchain.

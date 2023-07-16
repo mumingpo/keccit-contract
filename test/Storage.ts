@@ -2,8 +2,6 @@ import { loadFixture } from '@nomicfoundation/hardhat-network-helpers';
 import { ethers } from 'hardhat';
 import { expect } from 'chai';
 
-type ContractFactory = typeof ethers.ContractFactory;
-
 describe('Storage', function() {
     async function deployFixture() {
         const Storage = (await ethers.getContractFactory('Storage'));
